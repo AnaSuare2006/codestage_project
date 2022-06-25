@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href=/ class="nav">Home</a>
+        <a href=/arduino class="nav">More about Arduino</a>
+        <a class="nav">Projects</a>
+        <a href=/editor class="nav">Editor</a>
+        <a href="/login" class="join" id="primul">Log in</a>
+        <a href="/signup" class="join">Sign up</a>
+    </div>
+      
+    <div class="flexx">
+
+        <label class="save">
+            <a id="save">Save</a>
+        </label>
+    
+        <label onchange="importx(this)" class="save">
+            Browse
+            <input type="file">
+        </label>
+    
+    </div>
+
+    <div id="editorjs"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/prism.min.js"></script>
+    <script src="prism-clike.js"></script>
+    <script src="prism-c.js"></script>
+    <script >
+        console.log(Prism.languages.c);
+        const editorElem = document.getElementById('editorjs');
+
+        const flask = new CodeFlask(editorElem, {
+            language: 'c',
+            lineNumbers: true
+        });
+
+        flask.addLanguage('c', Prism.languages.c);
+
+        function saveStaticDataToFile(data) {
+            var blob = new Blob([data],
+                { type: "text/plain;charset=utf-8" }
+            );
+
+            return URL.createObjectURL(blob);
+        }
+
+        //Save button
+        document.getElementById("save").addEventListener("click", () => {
+            const element = document.getElementById("save");
+            const data = flask.getCode();
+
+            let blobx = saveStaticDataToFile(data);
+
+            element.href = blobx;
+            let fname = prompt("Please enter a file name") + '.c';
+            element.download = fname ;
+        })
+
+        async function importx(e){
+            let uwu = await e.firstElementChild.files[0].text();
+            flask.updateCode(uwu); 
+        }
+    </script>
+</body>
+</html>
