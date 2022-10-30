@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="principal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <title>Codestage</title>
 </head>
 
 <body>
-    <div class="vid">
-        <video autoplay muted loop id="myVideo">
-            <source src="uwu.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    
     <div class="content">
-        
+
         <div class="navbar">
             <div class="logo">
                 <p>CodeStage</p>
@@ -33,7 +29,7 @@
                 <a href=/support class="cent">support</a>
             </div>
             <div class="join">
-                <a href=/signup class="signup">Sign Up</a>
+                <a href=/signup class="signup" id="signup">Sign Up</a>
                 <a href=/login class="login">Log In</a>
             </div>
         </div>
@@ -81,9 +77,45 @@
                 </div>
             </div>
         </div>
+        <div class="bigcards">
+            <div class="pozica">
+                <img src="./Editor.jpg" width="700" height="500" class="foto">
+                <div class="textulet">
+                    <p class="glow">Code right in your browser.</p>
+                    <p>Collaborative, 0 setup, and Embeddable.<br>
+                        Codestage is the best tool for quickly starting,<br>
+                        sharing, and developing Arduino projects<br>
+                        in C, right from your browser.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pozica">
+                <div class="textulet">
+                    <p class="glow"> Code together.</p>
+                    <p>Jump right in. Enjoy a Google Docs-like editing<br> experience, where you
+                        can see your<br> collaborators’ cursors.
+                    </p>
+                </div>
+                <img src="./Signin.png" width="700" height="500" class="foto">
+            </div>
+
+            <div class="pozica">
+                <img src="./chat.png" width="700" height="500" class="foto">
+                <div class="textulet">
+                    <p class="glow"> Talk, learn, collab.</p>
+                    <p>Help is just a click away. <br>
+                        Instantly get help from a community of<br>
+                        millions of other programmers and learners.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
 
 </body>
 <script src="https://kit.fontawesome.com/04685cd90d.js" crossorigin="anonymous"></script>
+<script src="navbar.js"></script>
 
 </html>

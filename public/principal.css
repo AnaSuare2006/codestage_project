@@ -1,0 +1,159 @@
+
+.content {
+  bottom: 0;
+  background: whitesmoke;
+  color: #131A16;
+  width: 100%;
+  position: relative;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(30%);
+  }
+ 
+  .features
+  {
+    text-align: center;
+    color:#96C246;
+    color: #236545;
+    color:#2DB972;
+    font-size: 1.5rem;
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+
+  }
+  
+  .beneficii
+  {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    margin-bottom:18rem;
+  }
+
+  .ben{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+  }
+  
+  .xd {
+    display: flex;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #2DB972;;
+    transition: 0.3s;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    align-content: center;
+    align-items: center;
+
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .xd:hover {
+    box-shadow: 0.7rem 0.7rem 0.7rem 0.7rem #2DB972;;
+  }
+  
+  /* Add some padding inside the card container */
+  .xd{
+    padding: 1rem;
+    height: 14rem;
+    width: 14rem;
+  }
+  
+  .fa-solid
+  {
+    color:#131A16;
+    font-size: 1.7rem;
+    align-self: flex-start;
+  }
+  
+  .glow {
+    font-size: 2rem;
+    color: #131A16;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+    font-family: 'Playfair Display', serif
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1rem #fff, 0 0 20px #fff, 0 0 30px #2DB972, 0 0 40px #2DB972, 0 0 50px #2DB972, 0 0 60px #2DB972, 0 0 70px #2DB972;
+    }
+    to {
+      text-shadow: 0 0 2rem #fff, 0 0 30px #2DB972, 0 0 40px #2DB972, 0 0 50px #2DB972, 0 0 60px #2DB972, 0 0 70px #2DB972, 0 0 80px #2DB972;
+    }
+  }
+  
+  /*Carduri mari(text si poza) */ 
+  .pozica
+  {
+    display: flex;
+    flex-direction: row;
+    margin-top:9rem;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 18rem;
+  }
+  
+  .textulet
+  {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    color: #131A16;
+    font-weight: 300;
+    margin-left:5rem;
+    margin-right:5rem;
+
+  }
+  
+  .foto
+  {
+    box-sizing: content-box;
+    box-shadow: 0 1rem 1rem 0 #4F857F;
+    transition: 0.3s;
+    border-radius: 1rem;
+    margin-right:5rem;
+    margin-left:5rem;
+  }
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #131A16;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .titlu {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: floralwhite;
+    text-align: center;
+  }
+  
+  .titlu {
+    background: linear-gradient(to right,
+        hsl(98 100% 62%),
+        hsl(204 100% 59%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }

@@ -1,0 +1,93 @@
+body 
+{
+    padding:0px;
+    margin:0px;
+    background:#C7C7C7;
+}
+
+.sidebar
+{
+    height:94.6vh;
+    width:15rem;
+    background-color: #1D2321;
+}
+
+.section{
+    font-size: 1rem;
+    color:#C7C7C7;;
+    margin-left:1rem;
+}
+.menu{
+    margin-top:4rem;
+    margin-bottom: 4rem;
+}
+
+.gr
+{
+    color: floralwhite;
+    font-size:1rem;
+    margin-bottom: 0rem;
+    margin-left:1rem;
+}
+
+.nr
+{
+    color:#5BD798;
+    font-size:0.8rem;
+    margin-left:0.5rem;
+    margin-bottom: 0rem;
+
+}
+
+.group
+{
+    display:flex;
+    flex-direction: row;
+    height: min-content;
+    margin-bottom: 0rem;
+    align-items: flex-end;
+}
+
+.uwu
+{
+    color:#5BD798;
+    font-size:1rem;
+    margin-bottom: 0rem;
+    margin-left:1rem;
+}
+
+.icon{
+    display:flex;
+    align-items: center;
+
+}
+
+.hey
+{
+    color: #C7C7C7;
+    font-size: 1rem;
+    margin-left:1rem;
+}
+
+
+.groups
+{
+    margin-bottom:2rem;
+}
+
+.editor
+{
+    display:flex;
+    background-color:#2DB972;
+    width:10rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+
+}
+
+.btn
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}

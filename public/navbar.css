@@ -1,28 +1,8 @@
 
-.titlu
-{
-    font-size: 60px;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    color:floralwhite;
-    text-align: center;
-}
-
-.titlu {
-  background: linear-gradient(
-    to right, 
-    hsl(98 100% 62%),
-    hsl(204 100% 59%)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
 body {
   padding: 0px;
   margin: 0px;
-  background: #1D2321;
+  background: white;
   min-block-size: 100%;
   min-inline-size: 100%;
   box-sizing: border-box;
@@ -31,16 +11,15 @@ body {
   font-size: min(200%, 5vmin);
 }
 
-/*Navbar */ 
-.navbar
-{
+/*Navbar */
+.navbar {
   display: flex;
   flex-direction: row;
   background-color: #131A16;
   align-items: center;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -50,55 +29,52 @@ a:hover {
   color: #5BD798;
 }
 
-.logo
-{
+.logo {
   align-content: flex-start;
   font-size: 1rem;
   align-self: center;
-  color:white;
+  color: white;
   font-weight: bold;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
-.center
-{
+.center {
   align-self: center;
-  margin :0 auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   font-weight: lighter;
 }
 
-.join
-{
+.join {
   align-self: center;
   margin-right: 1rem;
   display: flex;
   align-content: space-around;
 }
 
-.cent{
+.cent {
   margin-right: 1rem;
   align-self: center;
+  font-weight: 200;
 }
 
-.signup
-{
+.signup {
   background-color: whitesmoke;
   border-radius: 1rem;
-  color:#131A16;
-  padding:0.3rem;
+  color: #131A16;
+  padding: 0.3rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
   margin-right: 1rem;
 }
 
-.login
-{
-  background-color:#2DB972;
+.login {
+  background-color: #2DB972;
   border-radius: 1rem;
-  color:white;
+  color: white;
   padding: 0.3rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
+

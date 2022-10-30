@@ -54,7 +54,7 @@ app.get("/support" , (req, res) => {
     res.sendFile(send_file("support.html"));
 })
 
-app.listen(6501, (err) => {
+app.listen(5500, (err) => {
     if(!err) console.log("yay");
     else console.err("probleyma grava");
 })

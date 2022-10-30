@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="editor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <script src="https://kit.fontawesome.com/7bfb2ecd48.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <div class="navbar">
+        <div class="logo">
+            <p>CodeStage</p>
+        </div>
+        <div class="center">
+            <a href=/dashboard class="cent">dashboard</a>
+            <a href=/profile class="cent">profile</a>
+            <a href=/info class="cent">info</a>
+            <a href=/support class="cent">support</a>
+        </div>
+        <div class="join">
+            <a href=/signup class="signup" id="signup">Sign Up</a>
+            <a href=/login class="login">Log In</a>
+        </div>
+    </div>
+
+    <div class="flexx">
+
+        <div class="browse">
+            <label onchange="importx(this)">
+                <a class="butonas">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </a>
+                <input type="file">
+            </label>
+        </div>
+        
+        <div class="file">
+            <label class="save">
+                <a id="save" class="butonas">
+                    <i class="fa-solid fa-file-export icon"></i>
+                </a>
+            </label>
+        </div>
+
+        <div class="png">
+            <label>
+                <a class="butonas">
+                    <i class="fa-solid fa-download icon"></i>
+                </a>
+            </label>
+        </div>
+
+        <div class="run">
+            <label>
+                <a class="butonas">
+                    <i class="fa-solid fa-plug-circle-plus icon " id="wires"></i>
+                </a>
+            </label>
+        </div>
+
+        <div id="hov" class="hoverablex">
+            <label>
+                <a class="butonas">
+                    <i class="fa-solid fa-circle-chevron-down icon"></i>
+                </a>
+            </label>
+            <div id="comps" >
+                <p id="ard">Generate Arduino Board<p>
+                <p id="brd"> Generate Breadboard</p>
+                <p id="led">Connect Led</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="editorjs"></div>
+
+
+    <p id = "GFG_DOWN"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/prism.min.js"></script>
+    <script src="prism-clike.js"></script>
+    <script src="prism-c.js"></script>
+    <script>
+        console.log(Prism.languages.c);
+        const editorElem = document.getElementById('editorjs');
+
+        const flask = new CodeFlask(editorElem, {
+            language: 'c',
+            lineNumbers: true
+        });
+
+        flask.addLanguage('c', Prism.languages.c);
+
+        function saveStaticDataToFile(data) {
+            var blob = new Blob([data],
+                { type: "text/plain;charset=utf-8" }
+            );
+
+            return URL.createObjectURL(blob);
+        }
+
+        //Save button
+        document.getElementById("save").addEventListener("click", () => {
+            const element = document.getElementById("save");
+            const data = flask.getCode();
+
+            let blobx = saveStaticDataToFile(data);
+
+            element.href = blobx;
+            let fname = prompt("Please enter a file name") + '.c';
+            element.download = fname;
+        })
+
+        async function importx(e) {
+            let uwu = await e.firstElementChild.files[0].text();
+            flask.updateCode(uwu);
+        }
+
+        document.getElementById("hov").addEventListener("click", () => {
+            (document.getElementById("comps").style.display == "block") ? 
+            document.getElementById("comps").style.display = "none" :
+            document.getElementById("comps").style.display = "block";
+        })
+
+        
+    </script>
+</body>
+<script src="editor.js"></script>
+
+</html>

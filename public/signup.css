@@ -1,0 +1,84 @@
+body 
+{
+    padding:0;
+    margin:0;
+    background-color: #C7C7C7;
+}
+
+.box
+{
+    display:flex;
+    background-color: #131A16;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:5rem;
+    margin-right: 40rem;
+    margin-left: 40rem;
+}
+
+.titlu
+{
+    color: floralwhite;
+    font-size:1.5rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.camp
+{
+    color: #C7C7C7;
+    font-size:1rem;
+    margin-left:1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr
+{
+    color: #2DB972;
+    width:37.5rem;
+    margin-left:1rem;
+}
+
+.butn
+{
+    background-color:#2DB972;
+    color:white;
+    width:8rem;
+    height:2rem;
+    border-radius:1rem;
+    align-self: center;
+    margin-top: 6rem;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid #2DB972;
+}
+
+.xd
+{
+    color: #2DB972;
+    align-self: flex-start;
+    font-size:1rem;
+    margin-left:1rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.lol
+{
+    margin-bottom: 4rem;
+}
+
+
+.butnx
+{
+    background-color:#2DB972;
+    color:white;
+    width:8rem;
+    height:3rem;
+    border-radius:1rem;
+    align-self: center;
+    margin-top: 6rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:1rem;
+    border: 1px solid #2DB972;
+}
